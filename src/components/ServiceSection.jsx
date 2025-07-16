@@ -1,0 +1,52 @@
+import { HiCog, HiCode, HiServer, HiOutlineLightningBolt, HiLink } from "react-icons/hi";
+import ServiceCard from "./ServiceCard";
+import SectionTitle from "./SectionTitle";
+import useServiceSectionStore from "../store/useServiceSectionStore";
+const ServiceSection = () => {
+    const { title, description, webDevelopments, frontendDevelopments, backendDevelopments, apiDevelopments, maintenanceDevelopments } = useServiceSectionStore();
+
+    return (<>
+        <div className="px-5 py-16 min-w-full max-w-screen-md items-center  md:flex-row md:max-w-xl dark:bg-gray-900">
+            <div className="my-3">
+                <SectionTitle title={title} />
+                <p className="text-justify dark:text-white">{description}</p>
+            </div>
+
+            <div className="grid gap-4 grid-cols-1 md:grid-cols-4 lg:grid-cols-4">
+
+                {
+                    webDevelopments.map((webDevelopment, index) => (
+                        <ServiceCard key={index} icon={< HiCode className="w-20 h-20 mb-2 text-gray-600" />} service={webDevelopment} />
+                    ))
+                }
+
+                {
+                    frontendDevelopments.map((frontendDevelopment, index) => (
+                        <ServiceCard key={index} icon={< HiOutlineLightningBolt className="w-20 h-20 mb-2 text-gray-600" />} service={frontendDevelopment} />
+                    ))
+                }
+
+                {
+                    backendDevelopments.map((backendDevelopment, index) => (
+                        <ServiceCard key={index} icon={< HiCog className="w-20 h-20 mb-2 text-gray-600" />} service={backendDevelopment} />
+                    ))
+                }
+
+                {
+                    apiDevelopments.map((apiDevelopment, index) => (
+                        <ServiceCard key={index} icon={< HiLink className="w-20 h-20 mb-2 text-gray-600" />} service={apiDevelopment} />
+                    ))
+                }
+
+                {
+                    maintenanceDevelopments.map((maintenanceDevelopment, index) => (
+                        <ServiceCard key={index} icon={< HiServer className="w-20 h-20 mb-2 text-gray-600" />} service={maintenanceDevelopment} />
+                    ))
+                }
+
+            </div>
+
+        </div>
+    </>)
+}
+export default ServiceSection
