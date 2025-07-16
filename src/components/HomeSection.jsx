@@ -4,14 +4,15 @@ import useHomeSectionStore from "../store/useHomeSectionStore"
 const HomeSection = () => {
     const { name, text, law, position } = useHomeSectionStore();
     return (<>
-        <div className="flex py-16 min-w-full max-w-screen-md items-center  md:flex-row md:max-w-xl dark:bg-gray-900">
-            <img
-                className="
-                object-cover w-full rounded-t-lg h-32 md:h-auto lg:h-auto 
-                lg:w-48 md:w-48 md:rounded-none md:rounded-s-lg"
-                src={a}
-                alt=""
-            />
+        <div className="flex justify-center py-10 min-w-full max-w-screen-md items-center   md:max-w-xl dark:bg-gray-900">
+            <div className="">
+                <img
+                    className="
+                object-cover rounded-t-lg  md:rounded-none md:rounded-s-lg"
+                    src={a}
+                    alt=""
+                />
+            </div>
             <div className="px-2 md:px-8 lg:px-4 overflow-x-auto">
                 <h5 className="mb-1 text-xs md:text-xl lg:text-2xl tracking-tight text-gray-900 dark:text-white whitespace-nowrap md:whitespace-normal">
                     {text}
