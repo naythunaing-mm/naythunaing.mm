@@ -1,13 +1,15 @@
 import { HiAcademicCap, HiOutlineDesktopComputer, HiOutlineBriefcase } from "react-icons/hi";
 import SectionTitle from "./SectionTitle";
-import useAboutSectionStore from "../store/useAboutSectionStore";
+import useAboutStore from "../store/useAboutStore";
 import AboutCard from "./AboutCard";
+import SectionTextTag from "./SectionTextTag";
 const AboutSection = () => {
-    const { title, educations, skills, experiences } = useAboutSectionStore();
+    const { title, educations, skills, experiences, overview } = useAboutStore();
 
     return (<>
         <div className="py-16 px-5 bg-white dark:bg-gray-800 dark:border-gray-700">
             <SectionTitle title={title} />
+            <SectionTextTag text={overview} />
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-5">
                 {educations.map((education, index) => (
                     <AboutCard key={index} icon={<HiAcademicCap className="w-24 h-24 mb-2 text-gray-600" />} about={education} />

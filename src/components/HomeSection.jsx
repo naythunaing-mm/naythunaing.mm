@@ -1,8 +1,8 @@
 import a from "../assets/img/a.png"
 import Button from "./Button"
-import useHomeSectionStore from "../store/useHomeSectionStore"
+import useHomeStore from "../store/useHomeStore"
 const HomeSection = () => {
-    const { name, text, law, position } = useHomeSectionStore();
+    const { name, text, law, position } = useHomeStore();
     return (<>
         <div className="flex justify-center py-10 min-w-full max-w-screen-md items-center   md:max-w-xl dark:bg-gray-900">
             <div className="">

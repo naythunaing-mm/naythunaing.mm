@@ -6,3 +6,13 @@
               -Service section
             4.Install Zustand global State
               --Design Data and Components
+
+2025/07/17  1.Create and Modify Components
+              --My Projection section
+              --Testimonial section
+              --Carousel
+            2.Modify
+              --Responsive
+              --Card Button, span tag
+            3.Assign Personal Data
+
