@@ -13,7 +13,7 @@ const AboutCard = ({ icon, about }) => {
                 <SpanTag name={about.title} />
             </div>
             <div className="mt-auto">
-                <CardText text={truncate(about.overview, 80)} />
+                <CardText text={truncate(about.overview, 81)} />
             </div>
         </Link>
     </>)
