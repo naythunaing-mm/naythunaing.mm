@@ -4,7 +4,7 @@ const useAboutCartStore = create(() => ({
         {
             id: 0,
             isActive: true,
-            category: "All",
+            category: "All PROJECTS",
         },
         {
             id: 1,
@@ -29,41 +29,42 @@ const useAboutCartStore = create(() => ({
         {
             id: 5,
             isActive: false,
-            category: "REACT",
-        },
-        {
-            id: 6,
-            isActive: false,
-            category: "REACT",
-        },
-        {
-            id: 7,
-            isActive: false,
-            category: "REACT",
+            category: "VUE",
         },
     ],
     title: "MY PROJECTS",
     projects: [
         {
             id: 1,
-            title: "POS",
-            category: "REACT",
+            title: "POS System",
+            category: "React",
             description:
-                "lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem alias nam enim possimus! Facere sapiente nihil, sit similique corporis incidunt. Sunt, illo laudantium, assumenda animi Here are the biggest the biggest More...",
+                "A responsive Point of Sale (POS) frontend application built with React. It features product browsing, cart functionality, discount handling, and real-time order updates. Designed with usability and performance in mind for small retail businesses.",
+            image: "/images/projects/pos-react.jpg",
         },
         {
             id: 2,
             title: "Hotel Booking System",
             category: "Laravel",
             description:
-                "lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem alias nam enim possimus! Facere sapiente nihil, sit similique corporis incidunt. Sunt, illo laudantium, assumenda animi Here are the biggest the biggest More...",
+                "A full-featured hotel booking platform developed using Laravel. It includes room availability search, online reservations, customer authentication, admin panel for room and booking management, and payment integration. Designed for real-world hospitality use cases.",
+            image: "/images/projects/hotel-laravel.jpg",
         },
         {
             id: 3,
-            title: "Invoice Management System",
-            category: "REACT",
+            title: "Hotel Booking System",
+            category: "PHP",
             description:
-                "lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem alias nam enim possimus! Facere sapiente nihil, sit similique corporis incidunt. Sunt, illo laudantium, assumenda animi Here are the biggest the biggest More...",
+                "A custom-built hotel booking system using core PHP and MySQL. The system handles user registration, room listing, availability checking, and basic booking functionality. Lightweight and ideal for learning and small-scale hotel operations.",
+            image: "/images/projects/hotel-php.jpg",
+        },
+        {
+            id: 4,
+            title: "Invoice Management System",
+            category: "React",
+            description:
+                "An invoice management tool built with React that allows users to create, edit, and download invoices. Includes features like client management, tax calculation, and PDF export. Ideal for freelancers and small businesses.",
+            image: "/images/projects/invoice-react.jpg",
         },
     ],
 }));

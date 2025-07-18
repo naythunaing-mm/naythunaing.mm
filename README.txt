@@ -16,3 +16,7 @@
               --Card Button, span tag
             3.Assign Personal Data
 
+2025/07/18 1.Assign Data
+             --My Project
+             --Service
+             --Skills

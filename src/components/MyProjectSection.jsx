@@ -6,7 +6,7 @@ import ProjectCategoryBtn from "./ProjectCategoryBtn"
 const MyProjectSection = () => {
     const { title, projects, categories } = useMyProjectStore();
     return (<>
-        <div className="py-16 px-5 bg-white my-5  dark:bg-gray-800 dark:border-gray-700">
+        <div className="py-16 px-2 sm:px-6  md:px-8 lg:px-10 xl:px-12 bg-white my-5  dark:bg-gray-800 dark:border-gray-700">
             <SectionTitle title={title} />
             <div className="text-nowrap overflow-x-auto scroll-hidden my-3">
                 {

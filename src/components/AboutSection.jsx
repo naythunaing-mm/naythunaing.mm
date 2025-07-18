@@ -7,7 +7,7 @@ const AboutSection = () => {
     const { title, educations, skills, experiences, overview } = useAboutStore();
 
     return (<>
-        <div className="py-16 px-2 sm:px-6 lg:px-8 bg-white dark:bg-gray-800 dark:border-gray-700">
+        <div className="py-16 px-2 sm:px-6  md:px-8 lg:px-10 xl:px-12 bg-white dark:bg-gray-800 dark:border-gray-700">
             <SectionTitle title={title} />
             <SectionTextTag text={overview} />
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-5">
