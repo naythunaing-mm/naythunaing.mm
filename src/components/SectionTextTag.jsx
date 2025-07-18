@@ -1,6 +1,6 @@
 const SectionTextTag = ({ text }) => {
     return (<>
-        <h3 className="text-justify dark:text-white">{text}</h3>
+        <p className="text-justify p-2 text-gray-900 dark:text-white">{text}</p>
     </>)
 }
 export default SectionTextTag

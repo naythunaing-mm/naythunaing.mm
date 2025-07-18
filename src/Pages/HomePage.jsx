@@ -6,14 +6,14 @@ import TestimonialSection from "../components/TestimonialSection"
 import ContactSection from "../components/ContactSection"
 const HomePage = () => {
     return (
-        <div className="dark:bg-gray-900 mt-16 dark:shadow-black  min-h-screen">
+        <>
             <HomeSection />
             <AboutSection />
             <ServiceSection />
             <MyProjectSection />
             <TestimonialSection />
             <ContactSection />
-        </div>
+        </>
     )
 }
 export default HomePage

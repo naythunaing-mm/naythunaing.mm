@@ -1,9 +1,10 @@
 import { HiFolderOpen, HiOutlineUserCircle, HiOutlineLink, HiOutlineHome } from "react-icons/hi";
+import { Link } from "react-router-dom";
 const Footer = () => {
 
     return (
         <>
-            <footer className="rounded-lg shadow-sm dark:bg-gray-900 mb-16 mt-auto">
+            <footer className="rounded-lg shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700 mb-16 mt-auto">
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
@@ -32,22 +33,17 @@ const Footer = () => {
 
             <nav className="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-900 dark:border-gray-600">
                 <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
-                    <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-                        <HiOutlineHome className="w-8 h-8 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" />
-                        <span className="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Home</span>
-                    </button>
-                    <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-                        <HiFolderOpen className="w-8 h-8 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" />
-                        <span className="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Projects</span>
-                    </button>
-                    <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-                        <HiOutlineLink className="w-8 h-8 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" />
-                        <span className="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Service</span>
-                    </button>
-                    <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-                        <HiOutlineUserCircle className="w-8 h-8 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" />
-                        <span className="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">About me</span>
-                    </button>
+                    {
+                        [
+                            { icon: <HiOutlineHome className="w-8 h-8 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" />, title: "Home", path: "/" },
+                            { icon: <HiFolderOpen className="w-8 h-8 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" />, title: "Projects", path: "/projects" },
+                            { icon: <HiOutlineLink className="w-8 h-8 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" />, title: "Links", path: "/links" },
+                            { icon: <HiOutlineUserCircle className="w-8 h-8 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" />, title: "About", path: "/about" },
+                        ].map((item, index) => (<Link to={item.path} key={index} type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                            {item.icon}
+                            <span className="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">{item.title}</span>
+                        </Link>))
+                    }
                 </div>
             </nav>
         </>

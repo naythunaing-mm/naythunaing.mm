@@ -4,7 +4,7 @@ import useHomeStore from "../store/useHomeStore"
 const HomeSection = () => {
     const { name, text, law, position } = useHomeStore();
     return (<>
-        <div className="flex px-2 sm:px-6 lg:px-8 justify-center py-10 min-w-full max-w-screen-md items-center   md:max-w-xl dark:bg-gray-900">
+        <div className="flex px-2 sm:px-6 lg:px-8 justify-center py-10 min-w-full max-w-screen-md items-center md:max-w-xl dark:bg-gray-900">
             <div className="">
                 <img
                     className="
