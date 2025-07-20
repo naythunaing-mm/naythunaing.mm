@@ -17,13 +17,13 @@ const ServiceSection = () => {
 
                 {
                     webDevelopments.map((webDevelopment, index) => (
-                        <ServiceCard key={index} icon={< HiCode className="w-20 h-20 mb-2 text-gray-600" />} service={webDevelopment} />
+                        <ServiceCard key={index} icon={< HiCode className="w-20 h-20 mb-2 text-green-500" />} service={webDevelopment} />
                     ))
                 }
 
                 {
                     frontendDevelopments.map((frontendDevelopment, index) => (
-                        <ServiceCard key={index} icon={< HiOutlineLightningBolt className="w-20 h-20 mb-2 text-gray-600" />} service={frontendDevelopment} />
+                        <ServiceCard key={index} icon={< HiOutlineLightningBolt className="w-20 h-20 mb-2 text-yellow-400" />} service={frontendDevelopment} />
                     ))
                 }
 

@@ -2,7 +2,7 @@ import { create } from "zustand";
 const useAboutStore = create(() => ({
     title: "ABOUT ME",
     overview:
-        "Hi, I'm Nay Thu Naing — a full stack developer skilled in Laravel, Java, React, and Vue. I enjoy creating real-world web applications, writing clean code, and working in collaborative environments. Fluent Business in English and Japanese, with over 2 years of industry experience.",
+        "Hi, I'm Nay Thu Naing Professional full stack developer skilled in Laravel, Java, React, and Vue. I enjoy creating real-world web applications, writing clean code, and working in collaborative environments. Business in English and Japanese, with over 2 years of industry experience.",
     subOverview:
         "I'm Nay Thu Naing, a passionate full stack web developer with a strong background in PHP, Laravel, Java (Spring Boot), and modern frontend frameworks like Vue.js and React. With over 2 years of experience in a software house, I’ve developed practical, scalable web applications that solve real-world problems. I hold a BSc degree from the University of Greenwich (UK) and an HND Diploma in Computing. I enjoy building both the logic behind systems and the interfaces users interact with. I take pride in writing clean, maintainable code and continuously improving my skills. I'm also comfortable working in agile teams, collaborating on Git, and integrating APIs and databases into robust applications. Aside from coding, I’m fluent in English and Japanese, which helps me connect with international teams and clients. I'm always eager to take on new challenges and grow as a developer.",
     educations: [
@@ -38,48 +38,39 @@ const useAboutStore = create(() => ({
                 {
                     id: 1,
                     name: "React",
-                    level: "80%",
                 },
                 {
                     id: 2,
                     name: "Vue",
-                    level: "80%",
                 },
                 {
                     id: 3,
                     name: "PHP, Laravel",
-                    level: "80%",
                 },
                 {
                     id: 4,
                     name: "Java(Core Java, Spring Boot)",
-                    level: "80%",
                 },
 
                 {
                     id: 5,
                     name: "TailwindCSS",
-                    level: "80%",
                 },
                 {
                     id: 6,
                     name: "Git",
-                    level: "80%",
                 },
                 {
                     id: 7,
                     name: "MySQL",
-                    level: "80%",
                 },
                 {
                     id: 8,
                     name: "DB2",
-                    level: "80%",
                 },
                 {
                     id: 9,
                     name: "Docker Knowledge",
-                    level: "80%",
                 },
             ],
             overview:
@@ -91,6 +82,13 @@ const useAboutStore = create(() => ({
     experiences: [
         {
             title: "Experience",
+            companies: [
+                {
+                    id: 1,
+                    year: 2,
+                    name: "Softguide Software House"
+                }
+            ],
             overview:
                 "Over 2 years of experience in a software house environment, working on full stack web projects using Laravel, Java (Spring Boot), PHP, and Vue/React. Built real-world systems including a hotel booking platform and internal business tools. Strong focus on clean code, teamwork, and continuous learning.",
             subOverview:

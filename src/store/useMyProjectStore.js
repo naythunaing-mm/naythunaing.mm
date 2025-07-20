@@ -2,32 +2,32 @@ import { create } from "zustand";
 const useAboutCartStore = create(() => ({
     categories: [
         {
-            id: 0,
+            id: 1,
             isActive: true,
             category: "All PROJECTS",
         },
         {
-            id: 1,
+            id: 2,
             isActive: false,
             category: "REACT",
         },
         {
-            id: 2,
+            id: 3,
             isActive: false,
             category: "PHP",
         },
         {
-            id: 3,
+            id: 4,
             isActive: false,
             category: "LARAVEL",
         },
         {
-            id: 4,
+            id: 5,
             isActive: false,
             category: "JAVA",
         },
         {
-            id: 5,
+            id: 6,
             isActive: false,
             category: "VUE",
         },

@@ -1,8 +1,10 @@
 import useAboutStore from "../store/useAboutStore"
 import SectionTitle from "./SectionTitle";
 import SectionTextTag from "./SectionTextTag";
-import { HiAcademicCap, HiOutlineDesktopComputer, HiOutlineBriefcase } from "react-icons/hi";
-import EducationCardDetail from "./EducationCardDetail";
+import { HiAcademicCap, HiOutlineDesktopComputer, HiOutlineBriefcase, HiBadgeCheck } from "react-icons/hi";
+import EducationDetailCard from "./EducationDetailCard";
+import SkillDetailCard from "./SkillDetailCard";
+import ExperienceDetailCard from "./ExperienceDetailCard";
 const AboutSectionDetail = () => {
     const { title, educations, skills, experiences, overview } = useAboutStore();
     return (<>
@@ -11,15 +13,15 @@ const AboutSectionDetail = () => {
             <SectionTextTag text={overview} />
             <div className="py-5">
                 {educations.map((education, index) => (
-                    <EducationCardDetail key={index} listIcon={<HiAcademicCap className="w-5 h-5 text-gray-600" />} icon={<HiAcademicCap className="w-10 h-10 text-gray-600" />} about={education} />
+                    <EducationDetailCard key={index} listIcon={<HiAcademicCap className="w-5 h-5 text-gray-600" />} icon={<HiAcademicCap className="w-10 h-10 text-gray-600" />} about={education} />
                 ))}
 
                 {skills.map((skill, index) => (
-                    <EducationCardDetail key={index} icon={<HiOutlineDesktopComputer className="w-10 h-10  text-gray-600" />} about={skill} />
+                    <SkillDetailCard key={index} listIcon={<HiBadgeCheck className="w-5 h-5 text-blue-600" />} icon={<HiOutlineDesktopComputer className="w-10 h-10  text-gray-600" />} about={skill} />
                 ))}
 
                 {experiences.map((experience, index) => (
-                    <EducationCardDetail key={index} icon={<HiOutlineBriefcase className="w-10 h-10  text-gray-600" />} about={experience} />
+                    <ExperienceDetailCard key={index} listIcon={<HiBadgeCheck className="w-5 h-5 text-blue-600" />} icon={<HiOutlineBriefcase className="w-10 h-10  text-gray-600" />} about={experience} />
                 ))}
             </div>
         </div>

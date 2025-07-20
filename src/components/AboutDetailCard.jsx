@@ -1,6 +1,6 @@
 import CardText from "./CardText";
 import SpanTag from "./SpanTag";
-const AboutCardDetail = ({ icon, about }) => {
+const AboutDetailCard = ({ icon, about }) => {
     return (
         <div className="flex flex-col max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col items-center">
@@ -13,4 +13,4 @@ const AboutCardDetail = ({ icon, about }) => {
         </div>
     );
 }
-export default AboutCardDetail
+export default AboutDetailCard

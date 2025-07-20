@@ -2,7 +2,7 @@ import ListIconTag from "./ListIconTag";
 import SectionTextTag from "./SectionTextTag";
 import SectionTitle from "./SectionTitle";
 
-const EducationCardDetail = ({ about, icon, listIcon }) => {
+const EducationDetailCard = ({ about, icon, listIcon }) => {
     return (<>
         <div className=" dark:bg-gray-800 dark:border-gray-700 my-5">
             <div className="flex items-center"><span className="mr-2">{icon}</span><SectionTitle title={about.title} /></div>
@@ -18,4 +18,4 @@ const EducationCardDetail = ({ about, icon, listIcon }) => {
         </div>
     </>)
 }
-export default EducationCardDetail
+export default EducationDetailCard
