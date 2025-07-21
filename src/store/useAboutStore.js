@@ -7,14 +7,13 @@ const useAboutStore = create(() => ({
         "I'm Nay Thu Naing, a passionate full stack web developer with a strong background in PHP, Laravel, Java (Spring Boot), and modern frontend frameworks like Vue.js and React. With over 2 years of experience in a software house, I’ve developed practical, scalable web applications that solve real-world problems. I hold a BSc degree from the University of Greenwich (UK) and an HND Diploma in Computing. I enjoy building both the logic behind systems and the interfaces users interact with. I take pride in writing clean, maintainable code and continuously improving my skills. I'm also comfortable working in agile teams, collaborating on Git, and integrating APIs and databases into robust applications. Aside from coding, I’m fluent in English and Japanese, which helps me connect with international teams and clients. I'm always eager to take on new challenges and grow as a developer.",
     educations: [
         {
+            id: 1,
             title: "Education",
-            text: "Here are the biggest the biggest More...",
             certificates: [
                 {
                     id: 1,
                     category: "Diploma in Computing",
                     name: "HND in Computing, Scottish Qualifications Authority (UK)",
-                    image: "/images/education/university-of-greenwich.png",
                     year: "2019 - 2021",
                 },
                 {
@@ -33,6 +32,7 @@ const useAboutStore = create(() => ({
     ],
     skills: [
         {
+            id: 1,
             title: "Skill",
             skills: [
                 {
@@ -81,13 +81,14 @@ const useAboutStore = create(() => ({
     ],
     experiences: [
         {
+            id: 1,
             title: "Experience",
             companies: [
                 {
                     id: 1,
                     year: 2,
-                    name: "Softguide Software House"
-                }
+                    name: "Softguide Software House",
+                },
             ],
             overview:
                 "Over 2 years of experience in a software house environment, working on full stack web projects using Laravel, Java (Spring Boot), PHP, and Vue/React. Built real-world systems including a hotel booking platform and internal business tools. Strong focus on clean code, teamwork, and continuous learning.",

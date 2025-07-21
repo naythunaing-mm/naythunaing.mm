@@ -14,7 +14,7 @@ const ServiceCard = ({ service, icon }) => {
         setShowFullText(prev => !prev);
     }
     return (<>
-        <div className="flex flex-col max-w-sm p-6 bg-gray-300 border border-gray-300 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex flex-col hover:border-gray-800 dark:hover:border-gray-50  mx-auto max-w-sm p-6 bg-gray-300 border border-gray-300 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <div className="flex flex-col items-center">
                 {icon}
                 <SpanTag name={service.title} />

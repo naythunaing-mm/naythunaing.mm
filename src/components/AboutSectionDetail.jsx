@@ -5,6 +5,8 @@ import { HiAcademicCap, HiOutlineDesktopComputer, HiOutlineBriefcase, HiBadgeChe
 import EducationDetailCard from "./EducationDetailCard";
 import SkillDetailCard from "./SkillDetailCard";
 import ExperienceDetailCard from "./ExperienceDetailCard";
+import EducationDetail from "./EducationDetail";
+import SkillDetail from "./SkillDetail";
 const AboutSectionDetail = () => {
     const { title, educations, skills, experiences, overview } = useAboutStore();
     return (<>
@@ -13,16 +15,13 @@ const AboutSectionDetail = () => {
             <SectionTextTag text={overview} />
             <div className="py-5">
                 {educations.map((education, index) => (
-                    <EducationDetailCard key={index} listIcon={<HiAcademicCap className="w-5 h-5 text-gray-600" />} icon={<HiAcademicCap className="w-10 h-10 text-gray-600" />} about={education} />
+                    <EducationDetail key={index} listIcon={<HiAcademicCap className="w-5 h-5 text-gray-600" />} icon={<HiAcademicCap className="w-10 h-10 text-gray-600" />} about={education} />
                 ))}
 
                 {skills.map((skill, index) => (
-                    <SkillDetailCard key={index} listIcon={<HiBadgeCheck className="w-5 h-5 text-blue-600" />} icon={<HiOutlineDesktopComputer className="w-10 h-10  text-gray-600" />} about={skill} />
+                    <SkillDetail key={index} listIcon={<HiBadgeCheck className="w-5 h-5 text-blue-600" />} icon={<HiOutlineDesktopComputer className="w-10 h-10  text-gray-600" />} about={skill} />
                 ))}
 
-                {experiences.map((experience, index) => (
-                    <ExperienceDetailCard key={index} listIcon={<HiBadgeCheck className="w-5 h-5 text-blue-600" />} icon={<HiOutlineBriefcase className="w-10 h-10  text-gray-600" />} about={experience} />
-                ))}
             </div>
         </div>
     </>)

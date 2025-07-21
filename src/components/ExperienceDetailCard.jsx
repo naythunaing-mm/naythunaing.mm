@@ -1,6 +1,6 @@
 import SectionTextTag from "./SectionTextTag"
 import SectionTitle from "./SectionTitle"
-import ListIconTag from "./ListIconTag"
+import EducationListIconTag from "./EducationListIconTag"
 const ExperienceDetailCard = ({ about, icon, listIcon }) => {
     return (<>
         <div className=" dark:bg-gray-800 dark:border-gray-700 my-5">
@@ -11,7 +11,7 @@ const ExperienceDetailCard = ({ about, icon, listIcon }) => {
                     {
                         Array.isArray(about.companies) &&
                         about.companies.map((company) => (
-                            <ListIconTag key={company.id} icon={listIcon} text={company.name} />
+                            <EducationListIconTag key={company.id} icon={listIcon} text={company.name} />
                         ))
                     }
                 </div>

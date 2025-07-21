@@ -7,12 +7,14 @@ import ContactSection from "../components/ContactSection"
 const HomePage = () => {
     return (
         <>
-            <HomeSection />
-            <AboutSection />
-            <ServiceSection />
-            <MyProjectSection />
-            <TestimonialSection />
-            <ContactSection />
+            <div className="bg-gray-200">
+                <HomeSection />
+                <AboutSection />
+                <ServiceSection />
+                <MyProjectSection />
+                <TestimonialSection />
+                <ContactSection />
+            </div>
         </>
     )
 }

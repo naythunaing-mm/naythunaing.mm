@@ -1,8 +1,10 @@
 import { HiAcademicCap, HiOutlineDesktopComputer, HiOutlineBriefcase } from "react-icons/hi";
 import SectionTitle from "./SectionTitle";
 import useAboutStore from "../store/useAboutStore";
-import AboutCard from "./AboutCard";
 import SectionTextTag from "./SectionTextTag";
+import EducationCard from "./EducationCard";
+import SkillCard from "./SkillCard";
+import ExperienceCard from "./ExperienceCard";
 const AboutSection = () => {
     const { title, educations, skills, experiences, overview } = useAboutStore();
 
@@ -10,17 +12,17 @@ const AboutSection = () => {
         <div className="py-16 px-2 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-20 bg-white dark:bg-gray-800 dark:border-gray-700">
             <SectionTitle title={title} />
             <SectionTextTag text={overview} />
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 py-5">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-5">
                 {educations.map((education, index) => (
-                    <AboutCard key={index} icon={<HiAcademicCap className="w-24 h-20 mb-2 text-gray-600" />} about={education} />
+                    <EducationCard key={index} icon={<HiAcademicCap className="w-24 h-20 mb-2 text-gray-600" />} education={education} />
                 ))}
 
                 {skills.map((skill, index) => (
-                    <AboutCard key={index} icon={<HiOutlineDesktopComputer className="w-24 h-20 mb-2 text-gray-600" />} about={skill} />
+                    <SkillCard key={index} icon={<HiOutlineDesktopComputer className="w-24 h-20 mb-2 text-gray-600" />} skill={skill} />
                 ))}
 
                 {experiences.map((experience, index) => (
-                    <AboutCard key={index} icon={<HiOutlineBriefcase className="w-24 h-20 mb-2 text-gray-600" />} about={experience} />
+                    <ExperienceCard key={index} icon={<HiOutlineBriefcase className="w-24 h-20 mb-2 text-gray-600" />} experience={experience} />
                 ))}
             </div>
         </div>

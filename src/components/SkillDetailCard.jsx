@@ -1,5 +1,5 @@
 import SectionTextTag from "./SectionTextTag"
-import ListIconTag from "./ListIconTag"
+import EducationListIconTag from "./EducationListIconTag"
 import SectionTitle from "./SectionTitle"
 const SkillDetailCard = ({ about, icon, listIcon }) => {
     return (<>
@@ -11,7 +11,7 @@ const SkillDetailCard = ({ about, icon, listIcon }) => {
                     {
                         Array.isArray(about.skills) &&
                         about.skills.map((skill) => (
-                            <ListIconTag key={skill.id} icon={listIcon} text={skill.name} />
+                            <EducationListIconTag key={skill.id} icon={listIcon} text={skill.name} />
                         ))
                     }
                 </div>
