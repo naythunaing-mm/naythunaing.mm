@@ -16,7 +16,7 @@ const HomeSection = () => {
                 <h5 className="mb-1 text-xs md:text-xl lg:text-2xl tracking-tight text-gray-900 dark:text-white whitespace-nowrap md:whitespace-normal">
                     {text}
                 </h5>
-                <h3 className="mb-2 text-md text-blue-800 text-md md:text-2xl lg:text-3xl font-bold tracking-tight  dark:text-white whitespace-nowrap md:whitespace-normal">
+                <h3 className="mb-2 text-md text-blue-800 text-md md:text-2xl lg:text-3xl font-bold tracking-tight  dark:text-blue-700 whitespace-nowrap md:whitespace-normal">
                     {name}
                 </h3>
 
