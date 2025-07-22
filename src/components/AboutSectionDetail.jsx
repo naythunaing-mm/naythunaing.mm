@@ -1,12 +1,9 @@
 import useAboutStore from "../store/useAboutStore"
 import SectionTitle from "./SectionTitle";
 import SectionTextTag from "./SectionTextTag";
-import { HiAcademicCap, HiOutlineDesktopComputer, HiOutlineBriefcase, HiBadgeCheck } from "react-icons/hi";
-import EducationDetailCard from "./EducationDetailCard";
-import SkillDetailCard from "./SkillDetailCard";
-import ExperienceDetailCard from "./ExperienceDetailCard";
-import EducationDetail from "./EducationDetail";
-import SkillDetail from "./SkillDetail";
+import EducationDetails from "./EducationDetails";
+import SkillDetails from "./SkillDetails";
+import ExperienceDetails from "./ExperienceDetails";
 const AboutSectionDetail = () => {
     const { title, educations, skills, experiences, overview } = useAboutStore();
     return (<>
@@ -15,11 +12,15 @@ const AboutSectionDetail = () => {
             <SectionTextTag text={overview} />
             <div className="py-5">
                 {educations.map((education, index) => (
-                    <EducationDetail key={index} listIcon={<HiAcademicCap className="w-5 h-5 text-gray-600" />} icon={<HiAcademicCap className="w-10 h-10 text-gray-600" />} about={education} />
+                    <EducationDetails key={index} education={education} />
                 ))}
 
                 {skills.map((skill, index) => (
-                    <SkillDetail key={index} listIcon={<HiBadgeCheck className="w-5 h-5 text-blue-600" />} icon={<HiOutlineDesktopComputer className="w-10 h-10  text-gray-600" />} about={skill} />
+                    <SkillDetails key={index} skill={skill} />
+                ))}
+
+                {experiences.map((experience, index) => (
+                    <ExperienceDetails key={index} experience={experience} />
                 ))}
 
             </div>

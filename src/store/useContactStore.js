@@ -3,6 +3,6 @@ import { create } from "zustand";
 const useContactStore = create(() => ({
     title: "CONTACT ME",
     description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem alias nam enim possimus! Facere sapiente nihil, sit similique corporis incidunt. Sunt, illo laudantium, assumenda animi",
+        "I'm always open to discussing new projects, freelance opportunities, or collaborative ideas. Whether you have a question, want to start a project, or just want to say hello — feel free to reach out! I’m available via email, phone, or direct message.",
 }));
 export default useContactStore;

@@ -4,7 +4,6 @@ import SectionTitle from "./SectionTitle"
 import { useParams } from "react-router-dom";
 import useAboutStore from "../store/useAboutStore"
 import ListIconTag from "./ListIcontTag";
-import EducationDetailCard from "./EducationDetailCard";
 const SkillDetail = () => {
     const { skills } = useAboutStore()
     const { id } = useParams();
@@ -29,7 +28,7 @@ const SkillDetail = () => {
                     </>
                 ) : (
                     <>
-                        <p>Skill data not found.</p>
+                        <p className="dark:text-white">Skill data not found.</p>
                     </>
                 )}
             </div>

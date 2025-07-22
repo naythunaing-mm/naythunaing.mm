@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom"
-import ReadMoreBtn from "./ReadMoreBtn"
 import SpanTag from "./SpanTag"
 import CardText from "./CardText"
 import { useState } from "react"

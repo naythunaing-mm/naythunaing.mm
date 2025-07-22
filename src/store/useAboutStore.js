@@ -75,7 +75,7 @@ const useAboutStore = create(() => ({
             ],
             overview:
                 "I’m a full stack web developer with strong skills in Laravel, Java, React, and Vue. I enjoy turning ideas into real-world applications with clean code and modern design. From building APIs to crafting beautiful user interfaces, I love solving problems and learning new technologies to grow as a developer.",
-            subOverview:
+            description:
                 "As a passionate and detail-oriented full stack developer, I have hands-on experience in both frontend and backend development. I specialize in building dynamic, user-friendly, and scalable web applications using modern technologies such as Laravel, React.js, Vue.js, and Java (Spring Boot). My skill set covers a wide range of technologies including database management, RESTful API integration, version control, and secure authentication systems. I am comfortable working independently or in teams, and I always strive to write clean, maintainable, and testable code. My adaptability and eagerness to learn allow me to keep up with the latest development trends and tools.",
         },
     ],
@@ -92,7 +92,7 @@ const useAboutStore = create(() => ({
             ],
             overview:
                 "Over 2 years of experience in a software house environment, working on full stack web projects using Laravel, Java (Spring Boot), PHP, and Vue/React. Built real-world systems including a hotel booking platform and internal business tools. Strong focus on clean code, teamwork, and continuous learning.",
-            subOverview:
+            description:
                 "I have over 2 years of hands-on experience working at a software house, where I contributed to multiple full-stack web development projects. During this time, I gained real-world experience in designing, developing, and deploying applications using Laravel, PHP, Java (Core Java, Spring Boot), and modern JavaScript frameworks like Vue.js and React. I collaborated with cross-functional teams to build user-focused features, integrate APIs, and optimize performance across both frontend and backend systems. Notable projects include a Hotel Booking System built with Laravel, and a Kenja System developed using both PHP and Java, showcasing my ability to work across different technologies and deliver practical, high-impact solutions. My experience has equipped me with a strong understanding of agile development, code versioning, testing, and maintaining scalable applications in a fast-paced environment.",
         },
     ],
