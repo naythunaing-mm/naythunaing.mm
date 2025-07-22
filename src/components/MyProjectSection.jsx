@@ -13,7 +13,7 @@ const MyProjectSection = () => {
             currentCategory.category === "All PROJECTS"
     );
     return (<>
-        <div className="py-16 px-2 sm:px-6  md:px-8 lg:px-10 xl:px-12 bg-white my-5  dark:bg-gray-800 dark:border-gray-700">
+        <div className="py-16 px-2 sm:px-6  md:px-8 lg:px-10 xl:px-12 bg-white dark:bg-gray-800 dark:border-gray-700">
             <SectionTitle title={title} />
             <SectionTextTag text={description} />
             <div className="overflow-x-auto whitespace-nowrap scroll-hidden my-3">

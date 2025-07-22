@@ -9,15 +9,16 @@ const ProjectCategoryBtn = ({ category }) => {
         <button
             onClick={handleActive}
             type="button"
-            className={`text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2
-                dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800
-                ${isActive
-                    ? 'bg-blue-600 text-white dark:text-black'
-                    : 'bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200'
+            className={`inline-block mx-1 text-sm font-medium rounded-lg px-4 py-2 border transition-all duration-200
+                        focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
+                        ${isActive
+                    ? 'bg-blue-700 text-white border-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 dark:text-white'
+                    : 'text-blue-700 border border-blue-700 bg-white hover:bg-blue-700 hover:text-white dark:text-blue-500 dark:border-blue-500 dark:bg-transparent dark:hover:bg-blue-600 dark:hover:text-white'
                 }`}
         >
             {category}
         </button>
+
     </>)
 }
 export default ProjectCategoryBtn;
