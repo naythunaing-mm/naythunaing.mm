@@ -23,10 +23,13 @@
 
 2025/07/19  1.Fixed Z-index
 
-2025/07/21 1.Modify Design
+2025/07/21  1.Modify Design
 
-2025/07/22 1.Finish About Page
+2025/07/22  1.Finish About Page
              --Education
              --Skill
              --Experience
             2.Category and Footer Design
+
+2025/07/23  1.Finish Project Page, Contact Page
+            2.Fixed Design

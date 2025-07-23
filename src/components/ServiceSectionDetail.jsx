@@ -16,13 +16,13 @@ const ServiceSectionDetail = () => {
                 webDevelopments.map((webDevelopment, index) => <ServiceDetailCard key={index} detail={webDevelopment} icon={< HiCode className="w-10 h-10 text-green-600" />} />)
             }
             {
-                frontendDevelopments.map((frontendDevelopment, index) => <ServiceDetailCard key={index} detail={frontendDevelopment} icon={< HiOutlineLightningBolt className="w-10 h-10  text-yellow-400" />} />)
+                frontendDevelopments.map((frontendDevelopment, index) => <ServiceDetailCard key={index} detail={frontendDevelopment} icon={< HiOutlineLightningBolt className="w-10 h-10  text-yellow-600" />} />)
             }
             {
                 backendDevelopments.map((backendDevelopment, index) => <ServiceDetailCard key={index} detail={backendDevelopment} icon={< HiCog className="w-10 h-10 text-gray-600" />} />)
             }
             {
-                apiDevelopments.map((apiDevelopment, index) => <ServiceDetailCard key={index} detail={apiDevelopment} icon={< HiLink className="w-10 h-10 text-gray-600" />} />)
+                apiDevelopments.map((apiDevelopment, index) => <ServiceDetailCard key={index} detail={apiDevelopment} icon={< HiLink className="w-10 h-10 text-blue-600" />} />)
             }
             {
                 maintenanceDevelopments.map((maintenanceDevelopment, index) => <ServiceDetailCard key={index} detail={maintenanceDevelopment} icon={< HiServer className="w-10 h-10 text-gray-600" />} />)

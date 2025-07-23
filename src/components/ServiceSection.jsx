@@ -13,17 +13,17 @@ const ServiceSection = () => {
                 <SectionTextTag text={description} />
             </div>
 
-            <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
                 {
                     webDevelopments.map((webDevelopment, index) => (
-                        <ServiceCard key={index} icon={< HiCode className="w-20 h-20 mb-2 text-green-500" />} service={webDevelopment} />
+                        <ServiceCard key={index} icon={< HiCode className="w-20 h-20 mb-2 text-green-600" />} service={webDevelopment} />
                     ))
                 }
 
                 {
                     frontendDevelopments.map((frontendDevelopment, index) => (
-                        <ServiceCard key={index} icon={< HiOutlineLightningBolt className="w-20 h-20 mb-2 text-yellow-400" />} service={frontendDevelopment} />
+                        <ServiceCard key={index} icon={< HiOutlineLightningBolt className="w-20 h-20 mb-2 text-yellow-600" />} service={frontendDevelopment} />
                     ))
                 }
 
@@ -35,7 +35,7 @@ const ServiceSection = () => {
 
                 {
                     apiDevelopments.map((apiDevelopment, index) => (
-                        <ServiceCard key={index} icon={< HiLink className="w-20 h-20 mb-2 text-gray-600" />} service={apiDevelopment} />
+                        <ServiceCard key={index} icon={< HiLink className="w-20 h-20 mb-2 text-blue-600" />} service={apiDevelopment} />
                     ))
                 }
 

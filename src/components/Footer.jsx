@@ -1,4 +1,4 @@
-import { HiFolderOpen, HiOutlineUserCircle, HiOutlineLink, HiOutlineHome } from "react-icons/hi";
+import { HiFolderOpen, HiOutlineUserCircle, HiOutlineLink, HiOutlineHome, HiInformationCircle } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                             <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             <li>
@@ -36,7 +36,7 @@ const Footer = () => {
                 <div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
                     {[
                         { icon: <HiOutlineHome className="w-6 h-6 mb-1" />, title: "Home", path: "/" },
-                        { icon: <HiOutlineUserCircle className="w-6 h-6 mb-1" />, title: "About", path: "/about" },
+                        { icon: <HiInformationCircle className="w-6 h-6 mb-1" />, title: "About", path: "/about" },
                         { icon: <HiOutlineLink className="w-6 h-6 mb-1" />, title: "Services", path: "/services" },
                         { icon: <HiFolderOpen className="w-6 h-6 mb-1" />, title: "Projects", path: "/projects" },
                         { icon: <HiOutlineUserCircle className="w-6 h-6 mb-1" />, title: "Contact", path: "/contact" },

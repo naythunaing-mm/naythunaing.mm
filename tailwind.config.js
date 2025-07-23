@@ -9,7 +9,5 @@ export default {
     theme: {
         extend: {},
     },
-    plugins: [
-        require("flowbite/plugin"), // Add Flowbite plugin
-    ],
+    plugins: [require("flowbite/plugin")],
 };

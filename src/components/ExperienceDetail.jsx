@@ -1,6 +1,6 @@
 import useAboutStore from "../store/useAboutStore";
 import { useParams } from "react-router-dom";
-import { HiBadgeCheck, HiOutlineDesktopComputer } from "react-icons/hi";
+import { HiBadgeCheck, HiChip } from "react-icons/hi";
 import ListIconTag from "./ListIcontTag";
 import SectionTextTag from "./SectionTextTag";
 import SectionTitle from "./SectionTitle";
@@ -16,7 +16,7 @@ const ExperienceDetail = () => {
             <div className="mt-auto my-3">
                 {currentExperience ? (
                     <>
-                        <div className="flex items-center"><span className="mr-2"><HiOutlineDesktopComputer className="w-10 h-10 text-gray-600" />
+                        <div className="flex items-center"><span className="mr-2"><HiChip className="w-10 h-10 text-red-600" />
                         </span><SectionTitle title={currentExperience.title} /></div>
                         <SectionTextTag text={currentExperience.overview} />
                         <SectionTextTag text={currentExperience.description} />

@@ -7,6 +7,9 @@ import ServicePage from "../Pages/ServicePage";
 import EducationDetailPage from "../Pages/EducationDetailPage";
 import SkillDetailPage from "../Pages/SkillDetailPage";
 import ExperienceDetailPage from "../Pages/ExperienceDetailPage";
+import ContactPage from "../Pages/ContactPage";
+import MyProjectPage from "../Pages/MyProjectPage";
+import MyProjectDetailPage from "../Pages/MyProjectDetailPage";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +30,14 @@ const router = createBrowserRouter([
                 element: <ServicePage />
             },
             {
+                path: "/contact",
+                element: <ContactPage />
+            },
+            {
+                path: "/projects",
+                element: <MyProjectPage />
+            },
+            {
                 path: "/about/educations/:id",
                 element: <EducationDetailPage />
             },
@@ -37,7 +48,12 @@ const router = createBrowserRouter([
             {
                 path: "about/experiences/:id",
                 element: <ExperienceDetailPage />
+            },
+            {
+                path: "projects/project-detail/:id",
+                element: <MyProjectDetailPage />
             }
+
 
         ]
     },

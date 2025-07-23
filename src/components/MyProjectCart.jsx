@@ -10,7 +10,7 @@ const MyProjectCart = ({ project }) => {
 
     return (
         <>
-            <Link className="max-w-md mx-auto flex flex-col hover:border-gray-800 dark:hover:border-gray-50  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <Link to={`/projects/project-detail/${project.id}`} className="max-w-md mx-auto flex flex-col hover:border-gray-800 dark:hover:border-gray-50  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
                 <img className="rounded-t-lg w-full h-44" src={a} alt="" />
                 <div className="flex flex-col flex-grow p-5">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

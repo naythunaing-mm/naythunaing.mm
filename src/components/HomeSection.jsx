@@ -1,6 +1,7 @@
 import a from "../assets/img/a.png"
 import Button from "./Button"
 import useHomeStore from "../store/useHomeStore"
+import { HiOutlineArrowDown } from "react-icons/hi";
 const HomeSection = () => {
     const { name, text, law, position } = useHomeStore();
     return (<>
@@ -35,7 +36,10 @@ const HomeSection = () => {
                             <cite className="ps-3 text-xs md:text-2xl lg:text-2xl text-gray-500 dark:text-gray-400">{position}</cite>
                         </div>
                     </figcaption>
-                    <div className="mt-6 animate-bounce">
+                    <div className="mt-10 flex flex-col items-center gap-4">
+                        <div className="p-3 rounded-full bg-slate-100 dark:bg-slate-700 shadow-md animate-bounce">
+                            <HiOutlineArrowDown className="w-6 h-6 text-gray-700 dark:text-gray-200" />
+                        </div>
                         <Button name="Download CV" />
                     </div>
                 </figure>

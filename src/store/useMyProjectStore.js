@@ -2,9 +2,9 @@ import { create } from "zustand";
 const useAboutCartStore = create((set) => ({
     setActiveCategory: (selectedCategory) =>
         set((state) => ({
-            categories: state.categories.map((cat) => ({
-                ...cat,
-                isActive: cat.category === selectedCategory,
+            categories: state.categories.map((category) => ({
+                ...category,
+                isActive: category.category === selectedCategory,
             })),
         })),
     categories: [
@@ -16,7 +16,7 @@ const useAboutCartStore = create((set) => ({
         {
             id: 1,
             isActive: false,
-            category: "REACT",
+            category: "LARAVEL",
         },
         {
             id: 2,
@@ -26,17 +26,17 @@ const useAboutCartStore = create((set) => ({
         {
             id: 3,
             isActive: false,
-            category: "LARAVEL",
+            category: "REACT",
         },
         {
             id: 4,
             isActive: false,
-            category: "JAVA",
+            category: "VUE",
         },
         {
             id: 5,
             isActive: false,
-            category: "VUE",
+            category: "JAVA",
         },
     ],
     title: "MY PROJECTS",
