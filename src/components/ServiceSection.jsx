@@ -1,4 +1,5 @@
 import { HiCog, HiCode, HiServer, HiOutlineLightningBolt, HiLink } from "react-icons/hi";
+import { FiSettings, FiServer } from "react-icons/fi";
 import ServiceCard from "./ServiceCard";
 import SectionTitle from "./SectionTitle";
 import useServiceStore from "../store/useServiceStore";
@@ -29,7 +30,7 @@ const ServiceSection = () => {
 
                 {
                     backendDevelopments.map((backendDevelopment, index) => (
-                        <ServiceCard key={index} icon={< HiCog className="w-20 h-20 mb-2 text-gray-600" />} service={backendDevelopment} />
+                        <ServiceCard key={index} icon={< FiSettings className="w-20 h-20 mb-2 text-gray-600" />} service={backendDevelopment} />
                     ))
                 }
 
@@ -41,7 +42,7 @@ const ServiceSection = () => {
 
                 {
                     maintenanceDevelopments.map((maintenanceDevelopment, index) => (
-                        <ServiceCard key={index} icon={< HiServer className="w-20 h-20 mb-2 text-gray-600" />} service={maintenanceDevelopment} />
+                        <ServiceCard key={index} icon={< FiServer className="w-16 h-20 mb-2 text-gray-600" />} service={maintenanceDevelopment} />
                     ))
                 }
 

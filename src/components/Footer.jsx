@@ -1,4 +1,5 @@
-import { HiFolderOpen, HiOutlineUserCircle, HiOutlineLink, HiOutlineHome, HiInformationCircle } from "react-icons/hi";
+import { HiOutlineUserCircle, HiOutlineLink, HiOutlineHome } from "react-icons/hi";
+import { BiInfoCircle, BiFolderOpen } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const Footer = () => {
@@ -13,18 +14,18 @@ const Footer = () => {
                             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                            <li>
-                                <a href="#" className="hover:underline me-4 md:me-6">About</a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:underline">Contact</a>
-                            </li>
+                            <Link to="terms&conditons">
+                                <p className="hover:underline me-4 md:me-6">About</p>
+                            </Link>
+                            <Link to="terms&conditons">
+                                <p className="hover:underline me-4 md:me-6">Privacy Policy</p>
+                            </Link>
+                            <Link to="terms&conditons">
+                                <p className="hover:underline me-4 md:me-6">Licensing</p>
+                            </Link>
+                            <Link to="terms&conditons">
+                                <p className="hover:underline">Contact</p>
+                            </Link>
                         </ul>
                     </div>
                     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
@@ -36,9 +37,9 @@ const Footer = () => {
                 <div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
                     {[
                         { icon: <HiOutlineHome className="w-6 h-6 mb-1" />, title: "Home", path: "/" },
-                        { icon: <HiInformationCircle className="w-6 h-6 mb-1" />, title: "About", path: "/about" },
+                        { icon: <BiInfoCircle className="w-6 h-6 mb-1" />, title: "About", path: "/about" },
                         { icon: <HiOutlineLink className="w-6 h-6 mb-1" />, title: "Services", path: "/services" },
-                        { icon: <HiFolderOpen className="w-6 h-6 mb-1" />, title: "Projects", path: "/projects" },
+                        { icon: <BiFolderOpen className="w-6 h-6 mb-1" />, title: "Projects", path: "/projects" },
                         { icon: <HiOutlineUserCircle className="w-6 h-6 mb-1" />, title: "Contact", path: "/contact" },
                     ].map((item, index) => (
                         <Link

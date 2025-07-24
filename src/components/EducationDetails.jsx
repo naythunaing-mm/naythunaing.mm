@@ -24,7 +24,7 @@ const EducationDetails = ({ education }) => {
                         {education.certificates.map((certificate) => (
                             <EducationListIconTag key={certificate.id} icon={<HiAcademicCap className="w-7 h-7 text-blue-600" />} name={certificate.name} category={certificate.category} year={certificate.year} />
                         ))}
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-10">
+                        <div className="grid mx-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 my-10">
                             {images.map((image) => (
                                 <div key={image.id}>
                                     <img

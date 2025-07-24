@@ -33,3 +33,8 @@
 
 2025/07/23  1.Finish Project Page, Contact Page
             2.Fixed Design
+
+2025/07/24  1.Create MyProject Details
+            --create component
+            2.Fixed Design
+            3.Fixed Icon

@@ -10,6 +10,7 @@ import ExperienceDetailPage from "../Pages/ExperienceDetailPage";
 import ContactPage from "../Pages/ContactPage";
 import MyProjectPage from "../Pages/MyProjectPage";
 import MyProjectDetailPage from "../Pages/MyProjectDetailPage";
+import TermAndCondition from "../Pages/TermAndCondition";
 
 const router = createBrowserRouter([
     {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
             {
                 path: "projects/project-detail/:id",
                 element: <MyProjectDetailPage />
+            },
+            {
+                path: "terms&conditons",
+                element: <TermAndCondition />
             }
 
 

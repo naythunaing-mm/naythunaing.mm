@@ -1,4 +1,4 @@
-import { HiOutlineDesktopComputer, HiBadgeCheck } from "react-icons/hi";
+import { HiChip, HiBadgeCheck } from "react-icons/hi";
 import SectionTextTag from "./SectionTextTag"
 import SectionTitle from "./SectionTitle"
 import { useParams } from "react-router-dom";
@@ -16,7 +16,7 @@ const SkillDetail = () => {
             <div className="mt-auto my-3">
                 {currentSkill ? (
                     <>
-                        <div className="flex items-center"><span className="mr-2"><HiOutlineDesktopComputer className="w-10 h-10 text-gray-600" />
+                        <div className="flex items-center"><span className="mr-2"><HiChip className="w-10 h-10 text-red-600" />
                         </span><SectionTitle title={currentSkill.title} /></div>
                         <SectionTextTag text={currentSkill.overview} />
                         <SectionTextTag text={currentSkill.description} />

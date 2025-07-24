@@ -2,7 +2,8 @@ import SectionTextTag from "./SectionTextTag"
 import SectionTitle from "./SectionTitle"
 import useServiceStore from "../store/useServiceStore";
 import ServiceDetailCard from "./ServiceDetailCard";
-import { HiCog, HiCode, HiServer, HiOutlineLightningBolt, HiLink } from "react-icons/hi";
+import { HiCode, HiOutlineLightningBolt, HiLink } from "react-icons/hi";
+import { FiSettings, FiServer } from "react-icons/fi";
 
 const ServiceSectionDetail = () => {
     const { title, description, webDevelopments, frontendDevelopments, backendDevelopments, apiDevelopments, maintenanceDevelopments } = useServiceStore();
@@ -19,13 +20,13 @@ const ServiceSectionDetail = () => {
                 frontendDevelopments.map((frontendDevelopment, index) => <ServiceDetailCard key={index} detail={frontendDevelopment} icon={< HiOutlineLightningBolt className="w-10 h-10  text-yellow-600" />} />)
             }
             {
-                backendDevelopments.map((backendDevelopment, index) => <ServiceDetailCard key={index} detail={backendDevelopment} icon={< HiCog className="w-10 h-10 text-gray-600" />} />)
+                backendDevelopments.map((backendDevelopment, index) => <ServiceDetailCard key={index} detail={backendDevelopment} icon={< FiSettings className="w-10 h-10 text-gray-600" />} />)
             }
             {
                 apiDevelopments.map((apiDevelopment, index) => <ServiceDetailCard key={index} detail={apiDevelopment} icon={< HiLink className="w-10 h-10 text-blue-600" />} />)
             }
             {
-                maintenanceDevelopments.map((maintenanceDevelopment, index) => <ServiceDetailCard key={index} detail={maintenanceDevelopment} icon={< HiServer className="w-10 h-10 text-gray-600" />} />)
+                maintenanceDevelopments.map((maintenanceDevelopment, index) => <ServiceDetailCard key={index} detail={maintenanceDevelopment} icon={< FiServer className="w-10 h-10 text-gray-600" />} />)
             }
         </div>
     </>)

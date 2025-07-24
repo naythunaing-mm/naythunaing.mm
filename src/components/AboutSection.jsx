@@ -1,4 +1,5 @@
-import { HiAcademicCap, HiOutlineDesktopComputer, HiChip } from "react-icons/hi";
+import { HiAcademicCap, HiChip } from "react-icons/hi";
+import { FiGlobe } from "react-icons/fi";
 import SectionTitle from "./SectionTitle";
 import useAboutStore from "../store/useAboutStore";
 import SectionTextTag from "./SectionTextTag";
@@ -18,11 +19,11 @@ const AboutSection = () => {
                 ))}
 
                 {skills.map((skill, index) => (
-                    <SkillCard key={index} icon={<HiOutlineDesktopComputer className="w-24 h-20 mb-2 dark:text-gray-700 dark:border-gray-950 border-black text-gray-800" />} skill={skill} />
+                    <SkillCard key={index} icon={<HiChip className="w-24 h-20 mb-2 border-red-700 text-red-600" />} skill={skill} />
                 ))}
 
                 {experiences.map((experience, index) => (
-                    <ExperienceCard key={index} icon={<HiChip className="w-24 h-20 mb-2 border-red-700 text-red-600" />} experience={experience} />
+                    <ExperienceCard key={index} icon={<FiGlobe className="w-24 h-20 mb-2 text-green-600 " />} experience={experience} />
                 ))}
             </div>
         </div>

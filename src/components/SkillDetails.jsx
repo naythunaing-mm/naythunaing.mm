@@ -1,6 +1,6 @@
 import SectionTextTag from "./SectionTextTag"
 import SectionTitle from "./SectionTitle"
-import { HiBadgeCheck, HiOutlineDesktopComputer } from "react-icons/hi";
+import { HiBadgeCheck, HiChip } from "react-icons/hi";
 import ListIconTag from "./ListIcontTag";
 const SkillDetails = ({ skill }) => {
     return (<>
@@ -9,7 +9,7 @@ const SkillDetails = ({ skill }) => {
                 {skill ? (
                     <>
                         <div className="flex items-center">
-                            <span className="mr-2"><HiOutlineDesktopComputer className="w-10 h-10 text-blue-600" /></span>
+                            <span className="mr-2"><HiChip className="w-10 h-10 text-red-600" /></span>
                             <SectionTitle title={skill.title} />
                         </div>
                         <SectionTextTag text={skill.overview} />

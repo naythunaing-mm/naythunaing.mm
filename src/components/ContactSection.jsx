@@ -11,7 +11,10 @@ const ContactSection = () => {
                 <SectionTitle title={title} />
                 <SectionTextTag text={description} />
             </div>
-            <div className="space-y-4 ml-14 text-sm text-gray-700 dark:text-gray-200">
+            <div className="pt-6">
+                <InputTag />
+            </div>
+            <div className="space-y-4 mt-10 text-sm text-gray-700 dark:text-gray-200">
                 <div className="flex items-center gap-2">
                     <span className="font-semibold">Phone:</span>
                     <a href={`tel:${phone}`} className="hover:underline">{phone}</a>
@@ -54,9 +57,6 @@ const ContactSection = () => {
                         <span>linkedin.com/in/naythunaing-mm</span>
                     </a>
                 </div>
-            </div>
-            <div className="pt-6">
-                <InputTag />
             </div>
         </section>
     </>)
