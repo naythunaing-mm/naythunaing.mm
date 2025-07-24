@@ -38,3 +38,4 @@
             --create component
             2.Fixed Design
             3.Fixed Icon
+            4.Fixed Category Button

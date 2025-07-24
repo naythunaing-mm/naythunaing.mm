@@ -1,7 +1,7 @@
 import useMyProjectStore from "../store/useMyProjectStore"
 const ProjectCategoryBtn = ({ category }) => {
     const { categories, setActiveCategory } = useMyProjectStore();
-    const isActive = categories.find((category) => category.category === category)?.isActive;
+    const isActive = categories.find((item) => item.category === category)?.isActive;
     const handleActive = () => {
         setActiveCategory(category);
     };
