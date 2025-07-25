@@ -1,5 +1,9 @@
 import { create } from "zustand";
-import aImage from '../assets/img/POS_REACT.png';
+import Image1 from "../assets/img/REACT_POS_1.png";
+import Image2 from "../assets/img/REACT_POS_2.png";
+import Image3 from "../assets/img/REACT_POS_3.png";
+import Image4 from "../assets/img/REACT_POS_4.png";
+
 const useAboutCartStore = create((set) => ({
     title: "MY PROJECTS",
     setActiveCategory: (selectedCategory) =>
@@ -58,20 +62,24 @@ const useAboutCartStore = create((set) => ({
                 {
                     id: 3,
                     name: "Features product listing, details, cart, and checkout",
-                }
+                },
             ],
-            cover_img: aImage,
+            cover_img: Image1,
             images: [
                 {
                     id: 1,
-                    img: aImage,
+                    img: Image2,
                 },
                 {
                     id: 2,
-                    img: aImage,
-                }
+                    img: Image3,
+                },
+                {
+                    id: 3,
+                    img: Image4,
+                },
             ],
-            demo: "https://your-demo-link.com",
+            demo: "https://naythunaing-mm.github.io/react-pos/",
             github: "https://github.com/your-username/pos-system",
             description:
                 "A modern and responsive Point of Sale (POS) web application built with React. It includes product catalog browsing, dynamic cart management, discount handling, and real-time order updates. Developed using React Hooks and Context API for efficient state management. Designed with a clean UI and optimized for small retail stores.",
@@ -99,14 +107,12 @@ const useAboutCartStore = create((set) => ({
                 },
                 {
                     id: 5,
-                    name: "Integrated online payment functionality"
-                }
+                    name: "Integrated online payment functionality",
+                },
             ],
             description:
                 "A comprehensive hotel booking platform built with Laravel. Features include room availability search, user authentication, online reservations, an admin dashboard for managing rooms and bookings, and integrated payment processing. Designed for real-world hospitality operations.",
-            images: [
-
-            ],
+            images: [],
         },
         {
             id: 3,
@@ -131,8 +137,8 @@ const useAboutCartStore = create((set) => ({
                 },
                 {
                     id: 5,
-                    name: "Lightweight and suitable for small hotels or learning"
-                }
+                    name: "Lightweight and suitable for small hotels or learning",
+                },
             ],
             description:
                 "A lightweight hotel booking system developed using core PHP and MySQL. It offers user registration, room listings, availability checks, and basic booking functionality. Ideal for learning projects or small-scale hotel setups.",
@@ -165,14 +171,13 @@ const useAboutCartStore = create((set) => ({
                 },
                 {
                     id: 6,
-                    name: "Download invoices as PDF files"
-                }
+                    name: "Download invoices as PDF files",
+                },
             ],
             description:
                 "A React-based invoice management application for freelancers and small businesses. Users can create, edit, and download invoices, manage client details, calculate taxes, and export invoices as PDF files.",
             images: [],
-        }
-        ,
+        },
     ],
     description:
         "Here are some of the projects I've built using modern web technologies. Each one showcases my ability to design, develop, and deploy functional applications with real-world use cases. From booking systems to invoice management tools, I focus on writing clean, maintainable code and creating user-friendly interfaces.",
