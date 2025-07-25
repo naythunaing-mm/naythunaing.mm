@@ -55,7 +55,7 @@ const router = createBrowserRouter([
                 element: <MyProjectDetailPage />
             },
             {
-                path: "terms&conditons",
+                path: "terms&conditions",
                 element: <TermAndCondition />
             }
 

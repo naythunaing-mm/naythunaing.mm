@@ -11,7 +11,7 @@ const MyProjectCart = ({ project }) => {
     return (
         <>
             <Link to={`/projects/project-detail/${project.id}`} className="max-w-md mx-auto hover:animate-pulse flex flex-col hover:shadow-lg dark:hover:shadow-lg  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                <img className="rounded-t-lg w-full h-44" src={project.cover_img} alt="" />
+                <img className="rounded-t-lg w-full h-44 border border-gray-100" src={project.cover_img} alt="" />
                 <div className="flex flex-col flex-grow p-5">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {project.title} <SpanTag name={project.category} />

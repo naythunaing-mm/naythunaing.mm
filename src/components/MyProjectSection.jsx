@@ -16,7 +16,7 @@ const MyProjectSection = () => {
         <div className="py-16 px-2 sm:px-6  md:px-8 lg:px-10 xl:px-12 bg-white dark:bg-gray-800 dark:border-gray-700">
             <SectionTitle title={title} />
             <SectionTextTag text={description} />
-            <div className="overflow-x-auto whitespace-nowrap scroll-hidden my-3">
+            <div className="overflow-x-auto whitespace-nowrap scroll-hidden my-6">
                 {categories.map((category) => (
                     <ProjectCategoryBtn key={category.id} category={category.category} />
                 ))}

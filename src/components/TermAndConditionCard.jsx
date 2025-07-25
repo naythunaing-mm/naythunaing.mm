@@ -1,4 +1,4 @@
-const TermAndCondition = ({ title, description }) => {
+const TermAndConditionCard = ({ title, description }) => {
     return (<>
         <div className="p-2 my-2">
             <h3 className="font-bold text-xl text-gray-800 dark:text-white">{title}</h3>
@@ -6,4 +6,4 @@ const TermAndCondition = ({ title, description }) => {
         </div>
     </>)
 }
-export default TermAndCondition
+export default TermAndConditionCard
