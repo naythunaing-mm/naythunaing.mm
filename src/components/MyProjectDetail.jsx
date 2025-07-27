@@ -53,7 +53,7 @@ const MyProjectDetail = () => {
                                 </div>
                             </div>
                             <div className="flex items-center justify-center">
-                                <DemoBtn icon={<HiOutlineEye className="w-7 h-7 text-blue-600" />} path={currentProject.demo} name="Demo" />
+                                <DemoBtn icon={<HiOutlineEye className="w-7 h-7 text-white" />} path={currentProject.demo} name="Demo" />
 
                             </div>
                         </div>
