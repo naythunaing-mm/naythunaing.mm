@@ -4,7 +4,7 @@ import useAboutStore from "../store/useAboutStore"
 import EducationListIconTag from "./EducationListIconTag"
 import { useParams } from "react-router-dom";
 import { HiAcademicCap } from "react-icons/hi";
-import aImage from '../assets/img/a.png';
+
 const EducationDetail = () => {
     const { educations } = useAboutStore()
     const { id } = useParams();
@@ -12,12 +12,6 @@ const EducationDetail = () => {
     const currentEducation = educations.find(
         (education) => education.id === educationId
     );
-    const images = [
-        { id: 1, image_url: aImage },
-        { id: 2, image_url: aImage },
-        { id: 3, image_url: aImage },
-        { id: 4, image_url: aImage },
-    ]
 
     return (<>
         <div className=" py-16 px-2 bg-white dark:bg-gray-800 dark:border-gray-700">
@@ -32,11 +26,11 @@ const EducationDetail = () => {
                             <EducationListIconTag key={certificate.id} icon={<HiAcademicCap className="w-7 h-7 text-blue-600" />} name={certificate.name} category={certificate.category} year={certificate.year} />
                         ))}
                         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 my-10">
-                            {images.map((image) => (
+                            {currentEducation.images.map((image) => (
                                 <div key={image.id}>
                                     <img
                                         className="h-auto max-w-full rounded-lg"
-                                        src={image.img}
+                                        src={image.img_url}
                                         alt={`image-${image.id}`}
                                     />
                                 </div>

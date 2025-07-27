@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import aImage from '../assets/img/a.png';
 const useAboutStore = create(() => ({
     title: "ABOUT ME",
     overview:
@@ -9,6 +10,25 @@ const useAboutStore = create(() => ({
         {
             id: 1,
             title: "Education",
+            cover_img: "",
+            images: [
+                {
+                    id: 1,
+                    img_url: aImage,
+                },
+                {
+                    id: 2,
+                    img_url: aImage,
+                },
+                {
+                    id: 3,
+                    img_url: aImage,
+                },
+                {
+                    id: 4,
+                    img_url: aImage,
+                },
+            ],
             certificates: [
                 {
                     id: 1,
@@ -20,7 +40,6 @@ const useAboutStore = create(() => ({
                     id: 2,
                     category: "Bachelor of Science (BSc)",
                     name: "University of Greenwich (UK)",
-                    image: "/images/education/university-of-greenwich.png",
                     year: "2019 - 2022",
                 },
             ],

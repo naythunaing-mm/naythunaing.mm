@@ -2,14 +2,9 @@ import SectionTextTag from "./SectionTextTag"
 import SectionTitle from "./SectionTitle"
 import EducationListIconTag from "./EducationListIconTag"
 import { HiAcademicCap } from "react-icons/hi";
-import aImage from '../assets/img/a.png';
+
 const EducationDetails = ({ education }) => {
-    const images = [
-        { id: 1, image_url: aImage },
-        { id: 2, image_url: aImage },
-        { id: 3, image_url: aImage },
-        { id: 4, image_url: aImage },
-    ]
+
     return (<>
         <div className=" px-2 bg-white dark:bg-gray-800 dark:border-gray-700">
             <div className="mt-auto my-3">
@@ -25,11 +20,11 @@ const EducationDetails = ({ education }) => {
                             <EducationListIconTag key={certificate.id} icon={<HiAcademicCap className="w-7 h-7 text-blue-600" />} name={certificate.name} category={certificate.category} year={certificate.year} />
                         ))}
                         <div className="grid mx-auto grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 my-10">
-                            {images.map((image) => (
+                            {education.images.map((image) => (
                                 <div key={image.id}>
                                     <img
                                         className="h-auto max-w-full rounded-lg"
-                                        src={image.image_url}
+                                        src={image.img_url}
                                         alt={`image-${image.id}`}
                                     />
                                 </div>
