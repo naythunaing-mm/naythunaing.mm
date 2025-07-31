@@ -1,9 +1,10 @@
 import { create } from "zustand";
+import profile_img from "../assets/img/a.png"
 const useHomeStore = create(() => ({
     text: "Hello, I'm",
     name: "Nay Thu Naing",
-    image: "",
-    law: '"Full Stack Developer skilled in front-end and back-end technologies, building responsive web applications, RESTful APIs, and databases. Passionate about clean code, scalability, and user-focused solutions."',
+    profile: profile_img,
+    slogan: '"Building seamless digital experiences from front to back. I craft responsive, scalable, and efficient web solutions that bring ideas to life—one line of code at a time."',
     position: "Full Stack Developer",
 }));
 export default useHomeStore;

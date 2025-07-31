@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
             </footer>
 
-            <nav className="md:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-900 dark:border-gray-600">
+            <nav className="md:hidden fixed shadow-md bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-900 dark:border-gray-600">
                 <div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
                     {[
                         { icon: <HiOutlineHome className="w-6 h-6 mb-1" />, title: "Home", path: "/" },
@@ -48,7 +48,7 @@ const Footer = () => {
                             key={index}
                             className={`inline-flex flex-col items-center justify-center px-3 hover:bg-gray-100 dark:hover:bg-gray-800 group 
                     ${location.pathname === item.path || active === index
-                                    ? 'text-blue-600 dark:text-blue-500'
+                                    ? 'text-blue-600 dark:text-blue-500 border-t-2 border-t-blue-800'
                                     : 'text-gray-500 dark:text-gray-400'
                                 }`}>
                             {item.icon}

@@ -1,15 +1,14 @@
-import a from "../assets/img/a.png"
 import Button from "./Button"
 import useHomeStore from "../store/useHomeStore"
 import { HiOutlineArrowDown } from "react-icons/hi";
 const HomeSection = () => {
-    const { name, text, law, position } = useHomeStore();
+    const { name, text, slogan, position, profile } = useHomeStore();
     return (<>
         <div className="flex px-2 sm:px-6 lg:px-8 justify-center py-10 min-w-full max-w-screen-md items-center md:max-w-xl dark:bg-gray-900">
             <div className="">
                 <img
                     className="object-cover mx-auto h-full w-full sm:h-2/3 sm:w-2/3 md:h-1/2 md:w-1/2 lg:w-1/2 lg:h-1/2 rounded-t-lg  md:rounded-none md:rounded-s-lg"
-                    src={a}
+                    src={profile}
                     alt=""
                 />
             </div>
@@ -27,7 +26,7 @@ const HomeSection = () => {
                     </svg>
                     <blockquote>
                         <p className="text-xs md:text-xl lg:text-xl italic font-medium text-gray-900 dark:text-white text-justify">
-                            {law}
+                            {slogan}
                         </p>
                     </blockquote>
                     <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">

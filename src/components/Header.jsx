@@ -34,7 +34,7 @@ export default function Header() {
         setDarkMode((prev) => !prev);
     };
     return (
-        <nav className="bg-white dark:bg-gray-900 fixed w-full z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <nav className="bg-white dark:bg-gray-900 fixed w-full shadow-md z-40 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <p className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Nay Thu Naing's Portfolio</p>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -57,7 +57,7 @@ export default function Header() {
                             <Link key={index} to={item.path} onClick={() => setActive(index)}>
                                 <button
                                     className={`py-2 px-3 rounded-sm text-sm font-medium transition-all duration-200 ${location.pathname === item.path || active === index
-                                        ? 'text-blue-600 dark:text-blue-500'
+                                        ? 'text-blue-600 dark:text-blue-500 border-b-2 border-b-blue-800'
                                         : 'text-gray-800 hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
                                         }`}
                                 >
