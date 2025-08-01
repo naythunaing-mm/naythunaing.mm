@@ -3,9 +3,11 @@ import Image1 from "../assets/img/REACT_POS_1.png";
 import Image2 from "../assets/img/REACT_POS_2.png";
 import Image3 from "../assets/img/REACT_POS_3.png";
 import Image4 from "../assets/img/REACT_POS_4.png";
-import LaraImg1 from "../assets/img/LARAVEL_HOTEL_1.png";
 import invoice1 from "../assets/img/invoice_1.png";
 import kenja from "../assets/img/kenja.png";
+import LaraImg1 from "../assets/img/larahotel_1.png";
+import LaraImg2 from "../assets/img/larahotel_2.png";
+import LaraImg3 from "../assets/img/larahotel_3.png";
 
 const useAboutCartStore = create((set) => ({
     title: "MY PROJECTS",
@@ -126,6 +128,14 @@ const useAboutCartStore = create((set) => ({
                     id: 1,
                     img: LaraImg1,
                 },
+                {
+                    id: 1,
+                    img: LaraImg2,
+                },
+                {
+                    id: 1,
+                    img: LaraImg3,
+                },
             ],
             github: "https://github.com/naythunaing-mm/laravel-booking",
         },
@@ -158,7 +168,20 @@ const useAboutCartStore = create((set) => ({
             ],
             description:
                 "A lightweight hotel booking system developed using core PHP and MySQL. It offers user registration, room listings, availability checks, and basic booking functionality. Ideal for learning projects or small-scale hotel setups.",
-            images: [],
+            images: [
+                {
+                    id: 1,
+                    img: LaraImg1,
+                },
+                {
+                    id: 1,
+                    img: LaraImg2,
+                },
+                {
+                    id: 1,
+                    img: LaraImg3,
+                },
+            ],
             github: "https://github.com/naythunaing-mm/booking_pure_php",
         },
         {

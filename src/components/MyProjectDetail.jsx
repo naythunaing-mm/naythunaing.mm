@@ -7,6 +7,7 @@ import SpanTag from "./SpanTag";
 import { HiOutlineEye } from "react-icons/hi";
 import { useState } from "react";
 import DemoBtn from "./DemoBtn";
+import GithubBtn from "./GithubBtn";
 
 const MyProjectDetail = () => {
     const { projects } = useMyProjectStore();
@@ -31,17 +32,11 @@ const MyProjectDetail = () => {
                             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 my-10">
                                 <div className="grid gap-4 p-2">
                                     <img
-                                        className="h-auto mx-auto max-w-full rounded-lg border border-slate-400"
+                                        className="h-auto mx-auto max-w-full md:w-auto lg:w-auto rounded-lg border border-slate-400"
                                         src={selectedImage}
                                         alt="selected"
                                     />
                                     <div className="grid grid-cols-5 gap-4">
-                                        <img
-                                            onClick={() => setSelectedImage(currentProject.cover_img)}
-                                            className="cursor-pointer rounded-md border border-gray-300 hover:opacity-80"
-                                            src={currentProject.cover_img}
-                                            alt="cover-thumbnail"
-                                        />
                                         {currentProject.images.map((image) => (
                                             <img
                                                 key={image.id}
@@ -54,8 +49,8 @@ const MyProjectDetail = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-center">
-                                    <DemoBtn icon={<HiOutlineEye className="w-7 h-7 text-white" />} path={currentProject.demo} name="Demo" />
-
+                                    {currentProject.demo && <DemoBtn name="Demo" url={currentProject.demo} />}
+                                    {currentProject.github && <GithubBtn className="w-8 h-8" source={currentProject.github} />}
                                 </div>
                             </div>
                         }
