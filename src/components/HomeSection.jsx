@@ -43,7 +43,7 @@ const HomeSection = () => {
                 <div className="p-3 rounded-full bg-slate-100 dark:bg-slate-700 shadow-md animate-bounce">
                     <HiOutlineArrowDown className="w-6 h-6 text-gray-700 dark:text-gray-200" />
                 </div>
-                <Button name="Download CV" link="src/assets/cv/NayThuNaing_Resume.pdf" />
+                <Button name="Download CV" link="/cv/NayThuNaing_Resume.pdf" />
             </div>
         </div>
     </>)
