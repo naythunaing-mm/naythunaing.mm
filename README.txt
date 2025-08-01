@@ -42,3 +42,6 @@
 
 2025/07/25  1.Create Project Image Gallery component
             --Fixed My Project
+
+2025/08/01  1.Modify Data
+            2.Add Contact Email

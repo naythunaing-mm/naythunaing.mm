@@ -27,36 +27,38 @@ const MyProjectDetail = () => {
                         {currentProject.bullets.map((bullet) => (
                             <ListIconTag key={bullet.id} icon={<BiLabel className="w-7 h-7 text-blue-600" />} category={bullet.name} />
                         ))}
-                        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 my-10">
-                            <div className="grid gap-4 p-2">
-                                <img
-                                    className="h-auto mx-auto max-w-full rounded-lg border border-slate-400"
-                                    src={selectedImage}
-                                    alt="selected"
-                                />
-                                <div className="grid grid-cols-5 gap-4">
+                        {currentProject.images.length > 0 &&
+                            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4 my-10">
+                                <div className="grid gap-4 p-2">
                                     <img
-                                        onClick={() => setSelectedImage(currentProject.cover_img)}
-                                        className="cursor-pointer rounded-md border border-gray-300 hover:opacity-80"
-                                        src={currentProject.cover_img}
-                                        alt="cover-thumbnail"
+                                        className="h-auto mx-auto max-w-full rounded-lg border border-slate-400"
+                                        src={selectedImage}
+                                        alt="selected"
                                     />
-                                    {currentProject.images.map((image) => (
+                                    <div className="grid grid-cols-5 gap-4">
                                         <img
-                                            key={image.id}
-                                            onClick={handleSelectImage}
+                                            onClick={() => setSelectedImage(currentProject.cover_img)}
                                             className="cursor-pointer rounded-md border border-gray-300 hover:opacity-80"
-                                            src={image.img}
-                                            alt={`thumbnail-${image.id}`}
+                                            src={currentProject.cover_img}
+                                            alt="cover-thumbnail"
                                         />
-                                    ))}
+                                        {currentProject.images.map((image) => (
+                                            <img
+                                                key={image.id}
+                                                onClick={handleSelectImage}
+                                                className="cursor-pointer rounded-md border border-gray-300 hover:opacity-80"
+                                                src={image.img}
+                                                alt={`thumbnail-${image.id}`}
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <DemoBtn icon={<HiOutlineEye className="w-7 h-7 text-white" />} path={currentProject.demo} name="Demo" />
+
                                 </div>
                             </div>
-                            <div className="flex items-center justify-center">
-                                <DemoBtn icon={<HiOutlineEye className="w-7 h-7 text-white" />} path={currentProject.demo} name="Demo" />
-
-                            </div>
-                        </div>
+                        }
                     </>
                     :
                     <><p className="dark:text-white">Project not found.</p> </>

@@ -62,5 +62,5 @@ const router = createBrowserRouter([
 
         ]
     },
-]);
+], { basename: "/naythunaing.mm/" });
 export default router

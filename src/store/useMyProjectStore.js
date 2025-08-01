@@ -4,6 +4,8 @@ import Image2 from "../assets/img/REACT_POS_2.png";
 import Image3 from "../assets/img/REACT_POS_3.png";
 import Image4 from "../assets/img/REACT_POS_4.png";
 import LaraImg1 from "../assets/img/LARAVEL_HOTEL_1.png";
+import invoice1 from "../assets/img/invoice_1.png";
+import kenja from "../assets/img/kenja.png";
 
 const useAboutCartStore = create((set) => ({
     title: "MY PROJECTS",
@@ -44,6 +46,11 @@ const useAboutCartStore = create((set) => ({
             id: 5,
             isActive: false,
             category: "JAVA",
+        },
+        {
+            id: 6,
+            isActive: false,
+            category: "PHP & JAVA",
         },
     ],
     projects: [
@@ -126,6 +133,7 @@ const useAboutCartStore = create((set) => ({
             id: 3,
             title: "Hotel Booking System (Core PHP)",
             category: "PHP",
+            cover_img: LaraImg1,
             bullets: [
                 {
                     id: 1,
@@ -157,6 +165,7 @@ const useAboutCartStore = create((set) => ({
             id: 4,
             title: "Invoice Management System",
             category: "REACT",
+            cover_img: invoice1,
             bullets: [
                 {
                     id: 1,
@@ -185,6 +194,50 @@ const useAboutCartStore = create((set) => ({
             ],
             description:
                 "A React-based invoice management application for freelancers and small businesses. Users can create, edit, and download invoices, manage client details, calculate taxes, and export invoices as PDF files.",
+            images: [],
+        },
+        {
+            id: 5,
+            title: "Kenja Cloud - Integrated School Affairs Management System",
+            category: "PHP & JAVA",
+            cover_img: kenja,
+            bullets: [
+                {
+                    id: 1,
+                    name: "Built with PHP and Java",
+                },
+                {
+                    id: 2,
+                    name: "All-in-One School Management",
+                },
+                {
+                    id: 3,
+                    name: "User-Friendly Interface",
+                },
+                {
+                    id: 4,
+                    name: "Customizable Reports and Layouts",
+                },
+                {
+                    id: 5,
+                    name: "Cost-Effective Cloud Deployment",
+                },
+                {
+                    id: 6,
+                    name: "High Security and Access Control",
+                },
+                {
+                    id: 7,
+                    name: "Ongoing Free Updates and Support",
+                },
+
+                {
+                    id: 8,
+                    name: "Future Expansion with Sundai Educational Services",
+                },
+            ],
+            description:
+                "I contributed to the development and/or integration of Kenja Cloud, a cloud-based school administration platform used by over 800 schools across Japan. It provides a complete suite for handling student records, attendance, grades, health data, and reporting. The system is designed to be user-friendly, customizable, and highly secure, with seamless cloud deployment and minimal setup cost. My role involved working with [backend/frontend/data integration] to ensure smooth operation and scalability of the system.",
             images: [],
         },
     ],

@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import aImage from '../assets/img/a.png';
+import aImage from "../assets/img/a.png";
 const useAboutStore = create(() => ({
     title: "ABOUT ME",
     overview:
