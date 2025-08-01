@@ -5,14 +5,14 @@ import { useState } from "react";
 import useHomeStore from "../store/useHomeStore";
 const Footer = () => {
     const [active, setActive] = useState(null);
-    const { profile } = useHomeStore();
+    const { profile_img } = useHomeStore();
     return (
         <>
             <footer className="rounded-lg shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700 mb-16 md:mb-0 mt-auto">
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <a href="https://github.com/naythunaing-mm" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                            <img src={profile} className="h-10 border border-blue-800 p-0.5 rounded-full" alt="Flowbite Logo" />
+                            <img src={profile_img} className="h-10 w-10 border border-blue-800 p-0.5 rounded-full" alt="Flowbite Logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
