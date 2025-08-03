@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router-dom";
 import Master from "../Layout/Master";
 import ErrorPage from "../Pages/ErrorPage";
 import HomePage from "../Pages/HomePage";
@@ -12,55 +12,24 @@ import MyProjectPage from "../Pages/MyProjectPage";
 import MyProjectDetailPage from "../Pages/MyProjectDetailPage";
 import TermAndCondition from "../Pages/TermAndCondition";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <Master />,
         errorElement: <ErrorPage />,
         children: [
-            {
-                path: "/",
-                element: <HomePage />,
-            },
-            {
-                path: "/about",
-                element: <AboutPage />,
-            },
-            {
-                path: "/services",
-                element: <ServicePage />
-            },
-            {
-                path: "/contact",
-                element: <ContactPage />
-            },
-            {
-                path: "/projects",
-                element: <MyProjectPage />
-            },
-            {
-                path: "/about/educations/:id",
-                element: <EducationDetailPage />
-            },
-            {
-                path: "about/skills/:id",
-                element: <SkillDetailPage />
-            },
-            {
-                path: "about/experiences/:id",
-                element: <ExperienceDetailPage />
-            },
-            {
-                path: "projects/project-detail/:id",
-                element: <MyProjectDetailPage />
-            },
-            {
-                path: "terms&conditions",
-                element: <TermAndCondition />
-            }
-
-
+            { path: "/", element: <HomePage /> },
+            { path: "/about", element: <AboutPage /> },
+            { path: "/services", element: <ServicePage /> },
+            { path: "/contact", element: <ContactPage /> },
+            { path: "/projects", element: <MyProjectPage /> },
+            { path: "/about/educations/:id", element: <EducationDetailPage /> },
+            { path: "/about/skills/:id", element: <SkillDetailPage /> },
+            { path: "/about/experiences/:id", element: <ExperienceDetailPage /> },
+            { path: "/projects/project-detail/:id", element: <MyProjectDetailPage /> },
+            { path: "/terms&conditions", element: <TermAndCondition /> }
         ]
-    },
-], { basename: "/naythunaing.mm/" });
-export default router
+    }
+]);
+
+export default router;
