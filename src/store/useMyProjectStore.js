@@ -90,7 +90,7 @@ const useAboutCartStore = create((set) => ({
                 },
             ],
             demo: "https://naythunaing-mm.github.io/react-pos/",
-            github: "https://github.com/your-username/pos-system",
+            github: "https://github.com/naythunaing-mm/pos-system",
             description:
                 "A modern and responsive Point of Sale (POS) web application built with React. It includes product catalog browsing, dynamic cart management, discount handling, and real-time order updates. Developed using React Hooks and Context API for efficient state management. Designed with a clean UI and optimized for small retail stores.",
         },
@@ -217,7 +217,9 @@ const useAboutCartStore = create((set) => ({
             ],
             description:
                 "A React-based invoice management application for freelancers and small businesses. Users can create, edit, and download invoices, manage client details, calculate taxes, and export invoices as PDF files.",
-            images: [],
+            images: [
+                { id: 1, img: invoice1 }
+            ],
         },
         {
             id: 5,
@@ -260,7 +262,7 @@ const useAboutCartStore = create((set) => ({
                 },
             ],
             description:
-                "I contributed to the development and/or integration of Kenja Cloud, a cloud-based school administration platform used by over 800 schools across Japan. It provides a complete suite for handling student records, attendance, grades, health data, and reporting. The system is designed to be user-friendly, customizable, and highly secure, with seamless cloud deployment and minimal setup cost. My role involved working with [backend/frontend/data integration] to ensure smooth operation and scalability of the system.",
+                "I contributed to the development and integration of Kenja Cloud, a cloud-based school administration platform used by over 800 schools across Japan. It provides a complete suite for handling student records, attendance, grades, health data, and reporting. The system is designed to be user-friendly, customizable, and highly secure, with seamless cloud deployment and minimal setup cost. My role involved working with [backend/frontend/data integration] to ensure smooth operation and scalability of the system.",
             images: [],
         },
     ],

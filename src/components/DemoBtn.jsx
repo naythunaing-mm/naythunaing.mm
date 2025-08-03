@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 const DemoBtn = ({ icon, name, path }) => {
     return (<>
-        <Link
+        <a
             to={path}
             className="inline-flex items-center gap-1 rounded-lg border bg-blue-700 border-blue-800 px-3 py-1 transition-colors hover:bg-blue-500"
         >
@@ -9,7 +8,7 @@ const DemoBtn = ({ icon, name, path }) => {
                 {name}
             </span>
             {icon}
-        </Link>
+        </a>
 
     </>)
 }

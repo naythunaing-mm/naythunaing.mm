@@ -2,12 +2,12 @@ import { create } from "zustand";
 const useServiceStore = create(() => ({
     title: "SERVICES",
     description:
-        "I build complete web applications from frontend to backend using modern technologies like Laravel, Spring Boot, React, and Vue. I focus on responsive design, performance, and scalability.",
+        "I build complete web applications from frontend to backend using modern technologies like Laravel, Spring, React, and Vue. I focus on responsive design, performance, and scalability.",
     webDevelopments: [
         {
             title: "Web Development",
             description:
-                "Build dynamic and scalable websites or web applications using modern technologies such as Laravel, Java (Spring Boot), React, and Vue. From concept to deployment, I deliver end-to-end solutions tailored to client needs.",
+                "Build dynamic and scalable websites or web applications using modern technologies such as Laravel, Java (Spring), React, and Vue. From concept to deployment, I deliver end-to-end solutions tailored to client needs.",
         },
     ],
     frontendDevelopments: [
@@ -21,7 +21,7 @@ const useServiceStore = create(() => ({
         {
             title: "Backend Development",
             description:
-                "Develop secure and efficient backend systems with Laravel and Spring Boot. I manage business logic, databases, authentication, and performance optimization with best practices.",
+                "Develop secure and efficient backend systems with Laravel and Spring. I manage business logic, databases, authentication, and performance optimization with best practices.",
         },
     ],
     apiDevelopments: [
