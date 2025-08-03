@@ -4,7 +4,7 @@ import SectionTextTag from "./SectionTextTag";
 import ListIconTag from "./ListIcontTag";
 import { BiLabel } from "react-icons/bi";
 import SpanTag from "./SpanTag";
-import { HiOutlineEye } from "react-icons/hi";
+import { FaRegEye } from "react-icons/fa";
 import { useState } from "react";
 import DemoBtn from "./DemoBtn";
 import GithubBtn from "./GithubBtn";
@@ -48,8 +48,8 @@ const MyProjectDetail = () => {
                                         ))}
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-center">
-                                    {currentProject.demo && <DemoBtn name="Demo" url={currentProject.demo} />}
+                                <div className="md:flex md:gap-5 items-center justify-center">
+                                    {currentProject.demo && <DemoBtn name="Demo" url={currentProject.demo} icon={<FaRegEye className="w-7 h-7 text-white" />} />}
                                     {currentProject.github && <GithubBtn className="w-8 h-8" source={currentProject.github} />}
                                 </div>
                             </div>

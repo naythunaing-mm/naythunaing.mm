@@ -189,6 +189,7 @@ const useAboutCartStore = create((set) => ({
             title: "Invoice Management System",
             category: "REACT",
             cover_img: invoice1,
+            github: "https://github.com/naythunaing-mm/invoice-app",
             bullets: [
                 {
                     id: 1,
