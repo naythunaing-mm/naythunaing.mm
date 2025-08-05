@@ -6,7 +6,7 @@ const HomeSection = () => {
     return (<>
         <div className=" py-10 min-w-full max-w-screen-md items-center md:max-w-xl dark:bg-gray-900">
             <div className="flex px-2 sm:px-6 lg:px-8 justify-center">
-                <div className="h-full">
+                <div className="h-full w-full md:w-1/2">
                     <img
                         className="object-cover mx-auto h-full w-full sm:h-2/3 sm:w-2/3 md:h-1/2 md:w-1/2 lg:w-1/2 lg:h-1/2 rounded-t-lg  md:rounded-none md:rounded-s-lg"
                         src={profile}

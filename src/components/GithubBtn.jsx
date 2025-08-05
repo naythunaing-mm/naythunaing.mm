@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const GithubBtn = ({ source }) => {
     return (<>
         <div className="flex items-center gap-2">
-            <span className="font-semibold">GitHub:</span>
+            <span className="font-semibold dark:text-white">GitHub:</span>
             <a
                 href={source}
                 target="_blank"
