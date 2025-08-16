@@ -40,10 +40,24 @@ export default function Header() {
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button
                         onClick={toggleDarkMode}
-                        className="text-3xl p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-yellow-500 dark:text-gray-400 shadow-md hover:scale-105 transition mx-3"
-                    >
-                        {darkMode ? <HiSun className="text-2xl" /> : <HiMoon className="text-2xl" />}
-                    </button>
+                        className="
+                            flex items-center gap-2
+                            px-4 py-2 rounded-full
+                            bg-gray-200 dark:bg-gray-700
+                            text-yellow-500 dark:text-gray-300
+                            hover:scale-105
+                            transition-all duration-300 ease-in-out
+                            mx-3 text-sm sm:text-base md:text-lg lg:text-xl
+                        "
+                        >
+                        {darkMode ? (
+                            <HiSun className="text-lg sm:text-xl md:text-2xl" />
+                        ) : (
+                            <HiMoon className="text-lg sm:text-xl md:text-2xl" />
+                        )}
+                        <span className="text-black dark:text-white">Theme</span>
+                        </button>
+
                     <button onClick={handleNav} data-collapse-toggle="navbar-sticky" type="button" className=" hidden items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
                         <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
