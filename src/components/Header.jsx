@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 export default function Header() {
     const [nav, setNav] = useState(false);
-    const [active, setActive] = useState(null);
+    const [active, setActive] = useState(0);
     const navItems = [
         { label: 'Home', path: '/' },
         { label: 'About', path: '/about' },
@@ -66,7 +66,7 @@ export default function Header() {
                     </button>
                 </div>
                 <div className={`${nav ? '' : 'hidden'} items-center justify-between w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
-                    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul className="md:hidden lg:flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         {navItems.map((item, index) => (
                             <Link key={index} to={item.path} onClick={() => setActive(index)}>
                                 <button

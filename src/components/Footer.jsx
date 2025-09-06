@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import useHomeStore from "../store/useHomeStore";
 const Footer = () => {
-    const [active, setActive] = useState(null);
+    const [active, setActive] = useState(0);
     const { profile_img } = useHomeStore();
     return (
         <>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
             </footer>
 
-            <nav className="md:hidden fixed shadow-md bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-900 dark:border-gray-600">
+            <nav className="lg:hidden fixed shadow-md bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-900 dark:border-gray-600">
                 <div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
                     {[
                         { icon: <HiOutlineHome className="w-6 h-6 mb-1" />, title: "Home", path: "/" },
