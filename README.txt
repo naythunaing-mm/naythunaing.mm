@@ -45,3 +45,9 @@
 
 2025/08/01  1.Modify Data
             2.Add Contact Email
+
+2025/09/10  1.Modify Container for Responsive width
+            2.Modify Home page for border
+            3.Modify Image for Desktop Size
+            4.Modify padding vertical from 16 to 14 in all pages
+            5.Modify My project cards words count from 150 to 100

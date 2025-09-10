@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const ContactSection = () => {
     const { title, description, phone, email, github, linkedin } = useContactStore();
     return (<>
-        <section className="py-16 px-6 bg-white dark:bg-gray-800">
+        <section className="py-14 px-6 bg-white dark:bg-gray-800">
             <div className="text-center space-y-2">
                 <SectionTitle title={title} />
                 <SectionTextTag text={description} />

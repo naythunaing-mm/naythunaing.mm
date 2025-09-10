@@ -8,7 +8,7 @@ const ServiceSection = () => {
     const { title, description, webDevelopments, frontendDevelopments, backendDevelopments, apiDevelopments, maintenanceDevelopments } = useServiceStore();
 
     return (<>
-        <div className="px-5 py-16 min-w-full max-w-screen-md items-center  md:flex-row md:max-w-xl dark:bg-gray-900">
+        <div className="px-5 py-14 min-w-full max-w-screen-md items-center  md:flex-row md:max-w-xl dark:bg-gray-900">
             <div className="my-3">
                 <SectionTitle title={title} />
                 <SectionTextTag text={description} />

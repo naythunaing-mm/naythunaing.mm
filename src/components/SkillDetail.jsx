@@ -12,7 +12,7 @@ const SkillDetail = () => {
         (skill) => skill.id === skillId
     );
     return (<>
-        <div className=" py-16 px-2 bg-white dark:bg-gray-800 dark:border-gray-700">
+        <div className=" py-14 px-2 bg-white dark:bg-gray-800 dark:border-gray-700">
             <div className="mt-auto my-3">
                 {currentSkill ? (
                     <>

@@ -8,7 +8,7 @@ const HomeSection = () => {
             <div className="flex px-2 sm:px-6 lg:px-8 justify-center items-center">
                 <div className="h-full w-full md:w-2/3">
                     <img
-                    className="object-cover mx-auto h-full w-full sm:h-2/3 sm:w-2/3 md:h-2/3 md:w-2/3 lg:w-2/3 lg:h-2/3 rounded-t-lg md:rounded-none md:rounded-s-lg"
+                    className="object-cover mx-auto h-full w-full sm:h-2/3 sm:w-2/3 md:h-2/3 md:w-2/3 lg:w-1/2 lg:h-1/2 rounded-t-lg md:rounded-none md:rounded-s-lg"
                     src={profile}
                     alt=""
                     />

@@ -16,7 +16,7 @@ const MyProjectCart = ({ project }) => {
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {project.title} <SpanTag name={project.category} />
                     </h5>
-                    <CardText text={truncate(project.description, 150)} />
+                    <CardText text={truncate(project.description, 100)} />
                     <div className="mt-auto pt-4">
                         <ReadMoreBtn name="Read More and Demo" />
                     </div>

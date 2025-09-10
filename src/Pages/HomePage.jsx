@@ -7,7 +7,7 @@ import ContactSection from "../components/ContactSection"
 const HomePage = () => {
     return (
         <>
-            <div className="bg-gray-200">
+            <div className="bg-gray-200 border border-gray-200 dark:border-gray-700">
                 <HomeSection />
                 <AboutSection />
                 <ServiceSection />
